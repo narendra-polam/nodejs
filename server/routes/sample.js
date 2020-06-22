@@ -1,11 +1,9 @@
 'use strict';
 
-export default class SampleController {
-
-    static connection(req, res) {
+module.exports = {
+    connection: function (req, res) {
         res.status(200).json({
             data: "data"
         });
     }
-
 }

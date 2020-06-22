@@ -1,12 +1,12 @@
 'use strict';
 const express = require('express');
 
-import Sample from './sample';
+import {connection} from './sample';
 
 export default () => {
     const router = express.Router();
 
-    router.get('/api/connection', Sample.connection);
+    router.get('/api/connection', connection);
 
     return router;
 }
