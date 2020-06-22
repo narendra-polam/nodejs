@@ -1,0 +1,18 @@
+# Environmental Vars
+**/.env
+
+# Dependency directories
+**/node_modules
+
+#npm logs file
+**/npm-debug.log
+
+# .idea IDE folder
+**/.idea
+
+# Package-lock.json
+**/package-lock.json
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+**/build/Release
+**/dist
