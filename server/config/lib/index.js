@@ -1,5 +1,5 @@
-import path from 'path';
-import dotenv from 'dotenv';
+const path = require('path');
+const dotenv = require('dotenv');
 
 // Parse Environmental Vars
 dotenv.config({

@@ -1,12 +1,14 @@
 'use strict';
 const express = require('express');
 
-import {connection} from './sample';
+const {addEmployee, editEmployee, deleteEmployee, getAllEmployees, getEmployee} = require('./mongoDbOps');
 
-export default () => {
-    const router = express.Router();
+const router = express.Router();
 
-    router.get('/api/connection', connection);
+router.route('/employee').post(addEmployee);
+router.route('/employee/:id').put(editEmployee);
+router.route('/employee/:id').get(getEmployee);
+router.route('/employees').get(getAllEmployees);
+router.route('/employee').delete(deleteEmployee);
 
-    return router;
-}
+module.exports = router;

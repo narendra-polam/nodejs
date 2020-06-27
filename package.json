@@ -2,10 +2,10 @@
   "name": "devmode",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server --max_old_space_size=4096 --exec babel-node",
+    "start": "nodemon server/app.js --max_old_space_size=4096 --exec babel-node",
     "clean": "npm prune && npm i"
   },
   "repository": {
@@ -24,13 +24,16 @@
     "express": "^4.17.1",
     "lodash": "^4.17.15",
     "moment": "^2.27.0",
-    "request": "^2.88.2",
-    "sp-request": "^3.0.0"
+    "mongoose": "^5.9.20",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "nodemon": "^1.11.0",
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-1": "^6.24.1"
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2"
   }
 }
